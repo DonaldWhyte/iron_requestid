@@ -1,6 +1,8 @@
 [package]
-name = "iron-requestid"
+name = "iron_requestid"
 version = "0.1.0"
 authors = ["Donald Whyte <donaldwhyte0@gmail.com>"]
 
 [dependencies]
+"iron" = "*"
+"uuid" = {version = "*", features = ["v4"]}
