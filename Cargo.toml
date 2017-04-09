@@ -9,7 +9,7 @@ license = "MIT"
 readme = "README.md"
 keywords = [ "iron", "service", "request", "id", "correlation" ]
 categories= [
-    "web-programming::http-sever"
+    "web-programming::http-server"
 ]
 description="Iron middleware for generating unique IDs for requests"
 
