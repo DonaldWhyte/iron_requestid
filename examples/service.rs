@@ -24,5 +24,4 @@ fn return_request_handler(request: &mut Request) -> IronResult<Response> {
             Status::InternalServerError,
             "could not get request ID")))
     }
-
 }
