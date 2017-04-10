@@ -46,13 +46,7 @@ fn main() {
 }
 
 fn return_request_handler(request: &mut Request) -> IronResult<Response> {
-    match request.extensions.get::<RequestId>() {
-        Some(id) => Ok(Response::with((
-            Status::Ok,
-            id.to_string()))),
-        None => Ok(Response::with((
-            Status::InternalServerError,
-            "could not get request ID")))
-    }
+   let request_id = request.extensions.get::<RequestId>().unwrap();
+   Ok(Response::with((Status::Ok, request_id.to_string())));
 }
 ```
